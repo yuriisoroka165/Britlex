@@ -1,0 +1,41 @@
+.skills-section__title {
+    @extend %section-title;
+}
+
+.skills-section__list {}
+
+.skills-section__item {
+    margin-bottom: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 45px;
+    font-size: 13px;
+    line-height: calc(20 / 13);
+    background-color: $global-lightgray-color;
+    border-radius: 5px;
+}
+
+.skills-section__image {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-section__item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 80px;
+    color: $button-blackblue-color;
+}
+
+.skills-section__item-text {
+    margin-bottom: 32px;
+}
+
+.skills-section__item-button {
+    width: 178px;
+    height: 50px;
+}
+
+.button {}

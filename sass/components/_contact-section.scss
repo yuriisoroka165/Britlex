@@ -7,6 +7,8 @@
 }
 
 .contact-section__image {
+    max-width: 253px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 38px;
@@ -42,5 +44,3 @@
     color: $global-gray-color;
     }
 }
-
-.contact-section__button {}

@@ -6,13 +6,17 @@
 }
 
 .about-section__image {
+    max-width: 283px;
+    width: 100%;
     margin-bottom: 23px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .about-section__text {
+    width: 295px;
     margin-bottom: 40px;
+    font-weight: 400;
     font-size: 13px;
     line-height: calc(20 / 13);
     text-align: center;

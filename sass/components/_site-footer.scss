@@ -31,10 +31,10 @@
     &:not(:first-child)::before {
         content: "";
         display: block;
-        margin-left: 5px;
-        margin-right: 5px;
-        width: 5px;
-        height: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
+        width: 2px;
+        height: 2px;
         border-radius: 50%;
         background-color: $global-gray-color;
         

@@ -1,5 +1,3 @@
-.header {}
-
 .site-navigation {
     display: flex;
     justify-content: space-between;
@@ -14,6 +12,13 @@
 
     & .site-logo--decoration {
         color: $logo-design-color;
+    }
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            font-size: 30px;
+            line-height: calc(45 / 30);
+        }
     }
 }
 
@@ -33,4 +38,11 @@
 .mobile-menu-icon {
     width: 33px;
     height: 29px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            width: 43px;
+            height: 39px;
+        }
+    }
 }

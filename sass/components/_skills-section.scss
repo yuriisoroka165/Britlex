@@ -1,8 +1,24 @@
 .skills-section__title {
     @extend %section-title;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        font-size: 30px;
+        line-height: calc(80 / 30);
+    }
 }
 
-.skills-section__list {}
+.skills-section__list {
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 34px;
+            justify-content: space-between;
+        }
+    }
+}
 
 .skills-section__item {
     margin-bottom: 21px;
@@ -10,16 +26,34 @@
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 45px;
-    font-size: 13px;
-    line-height: calc(20 / 13);
+    
     background-color: $global-lightgray-color;
     border-radius: 5px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            position: relative;
+            width: 240px;
+            min-height: 534px;
+            margin: 0;
+            padding-bottom: 36px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }
 
 .skills-section__image {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            max-width: 206px;
+            width: 100%;
+        }
+    }
 }
 
 .skills-section__item-title {
@@ -31,9 +65,32 @@
 
 .skills-section__item-text {
     margin-bottom: 32px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: calc(20 / 13);
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            margin-bottom: 25px;
+            font-size: 12px;
+            line-height: calc(18 / 12);
+        }
+    }
 }
 
 .skills-section__item-button {
     width: 178px;
     height: 50px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        & {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 200px;
+            font-size: 14px;
+            line-height: calc(21 / 14);
+            transform: translate(-50%, -50%);
+        }
+    }
 }

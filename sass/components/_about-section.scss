@@ -3,6 +3,11 @@
 .about-section__title {
     @extend %section-title;
     margin-bottom: 24px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        font-size: 30px;
+        line-height: calc(80 / 30);
+    }
 }
 
 .about-section__image {
@@ -11,6 +16,10 @@
     margin-bottom: 23px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        max-width: 352px;
+    }
 }
 
 .about-section__text {
@@ -20,9 +29,22 @@
     font-size: 13px;
     line-height: calc(20 / 13);
     text-align: center;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        width: 510px;
+        font-size: 14px;
+        line-height: calc(21 / 14);
+    }
 }
 
 .about-section__list {
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        width: 421px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .about-section__item {

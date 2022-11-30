@@ -1,9 +1,20 @@
 .contact-section {
     padding-bottom: 55px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
 }
 
 .contact-section__title {
     @extend %section-title;
+    
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        margin-bottom: 83px;
+        font-size: 30px;
+        line-height: calc(80 / 30);
+    }
 }
 
 .contact-section__image {
@@ -12,6 +23,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 38px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        max-width: 358px;
+        width: 100%;
+        margin-bottom: 34px;
+    }
 }
 
 .contact-section__text {
@@ -22,17 +39,28 @@
     line-height: calc(21 / 14);
     text-align: center;
     color: $global-gray-color;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        width: 469px;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        margin-bottom: 60px;
+    }
 }
 
 .contact-section__form {
     text-align: center;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        position: relative;
+    }
 }
 
 .contact-section__input {
     padding-left: 26px;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-bottom: 17px;
+    // margin-bottom: 17px;
     width: 291px;
     height: 50px;
     border: 1px solid $global-gray-color;
@@ -42,5 +70,28 @@
     font-size: 12px;
     line-height: calc(18 / 12);
     color: $global-gray-color;
+
+        @media screen and (min-width: $mobile-large-breakpoint) {
+                font-size: 13px;
+                line-height: calc(20 / 13);
+                
+        }
+    }
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        width: 512px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+}
+
+.contact-section__button {
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        position: absolute;
+        right: 0;
+        width: 193px;
+        height: 60px;
+        font-size: 16px;
+        line-height: calc(24 / 16);
     }
 }

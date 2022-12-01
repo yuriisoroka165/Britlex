@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container container">
             <nav class="site-navigation">
                 <a href="./" class="site-logo">Brit<span class="site-logo--decoration">lex</span></a>
                 <button class="mobile-menu-button">
@@ -26,7 +26,7 @@
     </header>
     <main>
         <section class="hero-section section">
-            <div class="container">
+            <div class="hero-section__container container">
                 <picture>
                     <source srcset="./images/hero-image_654.jpg" media="(min-width: 1200px)" type="image/jpeg">
                     <source srcset="./images/hero-image_460.jpg" media="(min-width: 992px)" type="image/jpeg">
@@ -35,9 +35,11 @@
                     <source srcset="./images/hero-image_299.jpg" media="(min-width: 320px)" type="image/jpeg">
                     <img class="hero-image" src="./images/hero-image_299.jpg" alt="Learn any language">
                 </picture>
-                <h1 class="hero-title">Learn Any Foreign Language</h1>
-                <p class="hero-text">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
-                <button class="hero-button button"> Get started</button>
+                <div class="hero-section_description">
+                    <h1 class="hero-title">Learn Any Foreign Language</h1>
+                    <p class="hero-text">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+                    <button class="hero-button button"> Get started</button>
+                </div>
             </div>
         </section>
         <section class="skills-section section">
@@ -56,7 +58,10 @@
                         <h3 class="skills-section__item-title">Speaking</h3>
                         <p class="skills-section__item-text">
                             Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for a limited time only
-                            Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners.
+                        </p>
+                        <p class="skills-section__item-text">
+                            Learn English online and improve your skills through our high-quality courses and resources – all designed for adult
+                            language learners.
                         </p>
                         <button class="skills-section__item-button button">Learn more</button>
                     </li>

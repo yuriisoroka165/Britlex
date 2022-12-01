@@ -6,6 +6,11 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
 }
 
 .section {

@@ -2,7 +2,7 @@
     padding-bottom: 55px;
 
     @media screen and (min-width: $mobile-large-breakpoint) {
-        padding-top: 100px;
+        padding-top: 140px;
         padding-bottom: 140px;
     }
 }
@@ -82,6 +82,7 @@
         width: 512px;
         height: 60px;
         margin-bottom: 0;
+        border-radius: 10px;
     }
 }
 
@@ -93,5 +94,6 @@
         height: 60px;
         font-size: 16px;
         line-height: calc(24 / 16);
+        border-radius: 10px;
     }
 }

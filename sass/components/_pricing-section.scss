@@ -1,4 +1,5 @@
 .pricing-section {
+    padding-top: 100px;
 }
 
 .pricing-section-title {
@@ -39,6 +40,7 @@
     color: $button-blackblue-color;
 
     @media screen and (min-width: $mobile-large-breakpoint) {
+        margin-bottom: 23px;
         font-size: 24px;
         line-height: calc(28 / 24);
     }

@@ -3,6 +3,14 @@
     justify-content: space-between;
     padding-top: 36px;
     padding-bottom: 29px;
+
+    @media screen and (min-width: $mobile-large-breakpoint) {
+        padding-bottom: 11px;
+    }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        padding-bottom: 40px;
+    }
 }
 
 .site-logo {

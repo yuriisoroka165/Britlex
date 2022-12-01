@@ -17,6 +17,12 @@
     padding-right: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
 
 .section {
   padding-top: 25px;
@@ -81,6 +87,16 @@ img {
   padding-top: 36px;
   padding-bottom: 29px;
 }
+@media screen and (min-width: 575px) {
+  .site-navigation {
+    padding-bottom: 11px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-navigation {
+    padding-bottom: 40px;
+  }
+}
 
 .site-logo {
   font-size: 24px;
@@ -123,7 +139,22 @@ img {
 
 .hero-section {
   padding-top: 0;
+  padding-bottom: 96px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 22px;
+  }
 }
 
 .hero-image {
@@ -141,6 +172,12 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-image {
+    max-width: 352px;
+    width: 100%;
+  }
+}
 
 .hero-title {
   width: 220px;
@@ -156,8 +193,31 @@ img {
 @media screen and (min-width: 575px) {
   .hero-title {
     width: 100%;
+    margin-bottom: 26px;
     font-size: 34px;
     line-height: 1.3235294118;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 217px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: left;
+  }
+  .hero-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/icons.svg#icon-lamp");
   }
 }
 
@@ -174,9 +234,20 @@ img {
 @media screen and (min-width: 575px) {
   .hero-text {
     width: 486px;
+    margin-bottom: 37px;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-text {
+    width: 338px;
+    margin-left: 0;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
   }
 }
 
@@ -188,9 +259,16 @@ img {
     line-height: 1.5;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-button {
+    width: 236px;
+    height: 65px;
+  }
+}
 
 @media screen and (min-width: 575px) {
   .skills-section__title {
+    font-weight: 600;
     font-size: 30px;
     line-height: 2.6666666667;
   }
@@ -219,7 +297,7 @@ img {
   .skills-section__item {
     position: relative;
     width: 240px;
-    min-height: 574px;
+    min-height: 584px;
     margin: 0;
     padding-bottom: 36px;
     padding-left: 15px;
@@ -236,6 +314,7 @@ img {
   .skills-section__image {
     max-width: 206px;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -253,6 +332,8 @@ img {
 }
 @media screen and (min-width: 575px) {
   .skills-section__item-text {
+    width: 196px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 1.5;
   }
@@ -270,8 +351,12 @@ img {
     width: 200px;
     font-size: 14px;
     line-height: 1.5;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -70%);
   }
+}
+
+.about-section {
+  padding-top: 84px;
 }
 
 .about-section__title {
@@ -279,6 +364,7 @@ img {
 }
 @media screen and (min-width: 575px) {
   .about-section__title {
+    margin-bottom: 23px;
     font-size: 30px;
     line-height: 2.6666666667;
   }
@@ -293,6 +379,7 @@ img {
 }
 @media screen and (min-width: 575px) {
   .about-section__image {
+    margin-bottom: 25px;
     max-width: 352px;
   }
 }
@@ -344,6 +431,10 @@ img {
   text-align: center;
 }
 
+.pricing-section {
+  padding-top: 100px;
+}
+
 @media screen and (min-width: 575px) {
   .pricing-section-title {
     font-size: 30px;
@@ -378,6 +469,7 @@ img {
 }
 @media screen and (min-width: 575px) {
   .pricing-section__title {
+    margin-bottom: 23px;
     font-size: 24px;
     line-height: 1.1666666667;
   }
@@ -451,7 +543,7 @@ img {
 }
 @media screen and (min-width: 575px) {
   .contact-section {
-    padding-top: 100px;
+    padding-top: 140px;
     padding-bottom: 140px;
   }
 }
@@ -549,6 +641,7 @@ img {
     width: 512px;
     height: 60px;
     margin-bottom: 0;
+    border-radius: 10px;
   }
 }
 
@@ -560,6 +653,7 @@ img {
     height: 60px;
     font-size: 16px;
     line-height: 1.5;
+    border-radius: 10px;
   }
 }
 

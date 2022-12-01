@@ -2,6 +2,7 @@
     @extend %section-title;
 
     @media screen and (min-width: $mobile-large-breakpoint) {
+        font-weight: 600;
         font-size: 30px;
         line-height: calc(80 / 30);
     }
@@ -33,7 +34,7 @@
         & {
             position: relative;
             width: 240px;
-            min-height: 574px;
+            min-height: 584px;
             margin: 0;
             padding-bottom: 36px;
             padding-left: 15px;
@@ -51,6 +52,7 @@
         & {
             max-width: 206px;
             width: 100%;
+            margin-bottom: 0;
         }
     }
 }
@@ -70,6 +72,8 @@
 
     @media screen and (min-width: $mobile-large-breakpoint) {
         & {
+            width: 196px;
+            margin-bottom: 20px;
             font-size: 12px;
             line-height: calc(18 / 12);
         }
@@ -88,7 +92,7 @@
             width: 200px;
             font-size: 14px;
             line-height: calc(21 / 14);
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -70%);
         }
     }
 }

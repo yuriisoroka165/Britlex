@@ -2,9 +2,17 @@
     @extend %section-title;
 
     @media screen and (min-width: $mobile-large-breakpoint) {
-        font-weight: 600;
-        font-size: 30px;
-        line-height: calc(80 / 30);
+        & {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: calc(80 / 30);
+        }
+    }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+            margin-bottom: 37px;
+        }
     }
 }
 
@@ -16,6 +24,13 @@
             flex-wrap: wrap;
             gap: 30px;
             justify-content: space-around;
+        }
+    }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+            gap: 10px;
+            justify-content: flex-start;
         }
     }
 }
@@ -41,6 +56,13 @@
             padding-right: 15px;
         }
     }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+            width: 224px;
+            height: 662;
+        }
+    }
 }
 
 .skills-section__image {
@@ -60,8 +82,16 @@
 .skills-section__item-title {
     font-weight: 600;
     font-size: 18px;
-    line-height: 80px;
+    line-height: calc(80 / 18);
     color: $button-blackblue-color;
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+            font-style: normal;
+            font-size: 20px;
+            line-height: calc(80 / 20);
+        }
+    }
 }
 
 .skills-section__item-text {
@@ -76,6 +106,14 @@
             margin-bottom: 20px;
             font-size: 12px;
             line-height: calc(18 / 12);
+        }
+    }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+            font-style: normal;
+                font-size: 13px;
+                line-height: calc(20 / 13);
         }
     }
 }
@@ -93,6 +131,13 @@
             font-size: 14px;
             line-height: calc(21 / 14);
             transform: translate(-50%, -70%);
+        }
+    }
+
+    @media screen and (min-width: $tablet-min-breakpoint) {
+        & {
+           width: 178px;
+            transform: translate(-50%, -30%);
         }
     }
 }

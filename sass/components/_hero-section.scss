@@ -4,6 +4,8 @@
     text-align: center;
 
     @media screen and (min-width: $tablet-min-breakpoint) {
+        padding-top: 20px;
+        padding-bottom: 27px;
         text-align: left;
     }
 }
@@ -63,7 +65,7 @@
         position: relative;
         display: flex;
         align-items: flex-end;
-        width: 217px;
+        width: 270px;
         margin-left: 0;
         margin-bottom: 25px;
         font-size: 36px;
